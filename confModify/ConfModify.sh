@@ -1,9 +1,9 @@
 #!bin/bash
 #modify jdbc connect mysql
-mysqlIP="47.93.234.89"
-mysqlPort="3306"
-mysqlUserName="root"
-mysqlPassWord="peng!841"
+mysqlIP="********"
+mysqlPort="***"
+mysqlUserName="****"
+mysqlPassWord="*******"
 mysqlDataBase="nichuiniu"
 jdbcDriver="com.mysql.jdbc.Driver"
 filePath="/opt/nichuiniu/WEB-INF/classes/config/"
