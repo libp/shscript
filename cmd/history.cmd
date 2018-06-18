@@ -4,6 +4,7 @@
 
 # nginx -s reload
 
+
 #reset password and enable remote login
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'Xxxx!nnn';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'Xxxx!nnn' WITH GRANT OPTION;
