@@ -1,0 +1,30 @@
+#!/usr/bin/expect -f
+set timeout 5
+set ipaddr [lindex $argv 0]
+set passwd [lindex $argv 1]
+set member [lindex $argv 2]
+
+spawn /usr/bin/ssh root@$ipaddr
+expect {
+  "(yes/no)?"
+  {
+    send "yes\n"
+    expect "assword:"
+    send "$passwd\n"
+  }
+  "assword:"
+  {
+    send "$passwd\n"
+  }
+}
+expect "]*"
+send "tmsh\n"
+expect "]*"
+send "modify ltm pool P_test_tanxing members add { $member }\n"
+expect "]*"
+send "show ltm pool P_test_tanxing members { $member }\n"
+expect "]*"
+send "qquit\n"
+expect "]*"
+send "exit\n"
+expect eof
