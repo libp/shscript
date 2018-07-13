@@ -16,3 +16,5 @@ bash <(curl -f -L -sS https://ngxpagespeed.com/install) \
 
 #learn ln -s  ,if modify conf ,not need modify two dir
 ln -s /opt/script/conf_file/nginx.conf /etc/nginx/nginx.conf
+
+# add alias gitpush=git push origin master
