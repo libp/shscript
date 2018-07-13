@@ -13,3 +13,6 @@ FLUSH PRIVILEGES;
 #Install PageSpeed  For Nginx
 bash <(curl -f -L -sS https://ngxpagespeed.com/install) \
      --nginx-version latest
+
+#learn ln -s  ,if modify conf ,not need modify two dir
+ln -s /opt/script/conf_file/nginx.conf /etc/nginx/nginx.conf
