@@ -9,3 +9,7 @@
 ALTER USER 'root'@'localhost' IDENTIFIED BY 'Xxxx!nnn';
 GRANT ALL PRIVILEGES ON *.* TO 'root'@'%' IDENTIFIED BY 'Xxxx!nnn' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
+
+#Install PageSpeed  For Nginx
+bash <(curl -f -L -sS https://ngxpagespeed.com/install) \
+     --nginx-version latest
