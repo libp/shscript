@@ -18,3 +18,6 @@ bash <(curl -f -L -sS https://ngxpagespeed.com/install) \
 ln -s /opt/script/conf_file/nginx.conf /etc/nginx/nginx.conf
 
 # add alias gitpush=git push origin master
+
+# reboot php 
+# service php-fpm restart
