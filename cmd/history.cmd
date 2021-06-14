@@ -15,9 +15,9 @@ bash <(curl -f -L -sS https://ngxpagespeed.com/install) \
      --nginx-version latest
 
 #learn ln -s  ,if modify conf ,not need modify two dir
-ln -s /opt/script/conf_file/nginx.conf /etc/nginx/nginx.conf
+ln -s /opt/shscript/conf_file/nginx.conf /etc/nginx/nginx.conf
 
 # add alias gitpush=git push origin master
 
-# reboot php 
+##start php order 
 # service php-fpm restart
