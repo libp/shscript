@@ -24,10 +24,10 @@ case "$1" in
               echo -e "$GREEN kill $PID $RES"
               kill $PID
               echo -e "$GREEN start zz.jar $RES"
-              /usr/bin/nohup /usr/java/jdk1.8.0_171-amd64/bin/java -jar /opt/zz/target/zz-0.0.1-SNAPSHOT.jar >> /opt/zz/logs/server.log &
+              /usr/bin/nohup /usr/bin/java -jar /opt/zz/target/zz-0.0.1-SNAPSHOT.jar >> /opt/zz/logs/server.log &
         else
               echo -e "$GREEN start zz.jar $RES"
-              /usr/bin/nohup /usr/java/jdk1.8.0_171-amd64/bin/java -jar /opt/zz/target/zz-0.0.1-SNAPSHOT.jar >> /opt/zz/logs/server.log &
+              /usr/bin/nohup /usr/bin/java -jar /opt/zz/target/zz-0.0.1-SNAPSHOT.jar >> /opt/zz/logs/server.log &
         fi
         ;;
 'stop')
