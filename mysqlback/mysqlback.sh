@@ -1,4 +1,7 @@
 #!/bin/sh
+
+find /opt/mysql-backup/ -type f -name "nichuiniu.dump_*.sql" -mtime +30 -exec rm {} \;
+
 DB_NAME="xxxx"
 DB_USER="root"
 DB_PASS="xxxxx"
